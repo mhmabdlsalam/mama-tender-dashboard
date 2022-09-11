@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context="com.arrowsdashboard.mamatenderdash.social_phones">
+
+    <ProgressBar
+        android:id="@+id/pload"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="مواقع التواصل وأرقام الأتصال"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="أضف أرقام الهاتف"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/benf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taa"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/cairo"
+                    android:text="رقم الهاتف 1 : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/phone1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب الرقم..."
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/phone"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/benf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taa"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.4"
+
+                    android:fontFamily="@font/cairo"
+                    android:text="رقم الهاتف 2 : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/phone2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب الرقم..."
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/phone"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/benf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taa"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/cairo"
+                    android:text="رقم الهاتف 3 : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/phone3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_weight="3"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب الرقم..."
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/phone"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tasd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/benf"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="أضف مواقع التواصل الأجتماعي"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/insta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tasd"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/cairo"
+
+                    android:text="الأنستجرام : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/instagramm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3.2"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب اللينك..."
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="3dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/instagram"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insta"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/cairo"
+                    android:text="تويتر : "
+                    android:textColor="#000"
+
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/twitterr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3.2"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب اللينك..."
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="3dp"
+
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/twitter_icon"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twitter"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.2"
+
+                    android:fontFamily="@font/cairo"
+                    android:text="فيسبوك : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/facebookk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3.2"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب اللينك..."
+                    android:padding="10dp"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="3dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facebook"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/snapchat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.2"
+
+                    android:fontFamily="@font/cairo"
+                    android:text="سناب شات : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/snapchatt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3.2"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب اللينك..."
+                    android:padding="10dp"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="3dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/snapchat"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/taadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="أضف لينك الموقع"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/benf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taa"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:elevation="3dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.2"
+
+                    android:fontFamily="@font/cairo"
+                    android:text="الموقع : "
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/website"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3.2"
+                    android:background="@drawable/input"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:hint="اكتب اللينك..."
+                    android:padding="10dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/www_icon"
+                    app:tint="@color/purple_500" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/purple_500"
+                android:fontFamily="@font/cairo"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="حفظ"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_customer_service"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.125" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

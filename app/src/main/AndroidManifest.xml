@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.arrowsdashboard.mamatenderdash" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_splash_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_splash_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Arrows_dash_board"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".pin_code"
+            android:exported="false" />
+
+        <activity
+            android:name=".point_activity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDeliveryPage"
+            android:exported="false" />
+        <activity
+            android:name=".user_activity"
+            android:exported="false" />
+        <activity android:name=".finished_order_detalis" />
+        <activity android:name=".finished_order" />
+        <activity android:name=".edit_cat" />
+        <activity android:name=".cat_page" />
+        <activity android:name=".request_activity" />
+        <activity android:name=".login_page" />
+        <activity android:name=".add_category" />
+        <activity android:name=".add_drink" />
+        <activity android:name=".map_activity" />
+        <activity android:name=".drinks" />
+        <activity android:name=".add_branch" />
+        <activity android:name=".branches" />
+        <activity android:name=".add_banner" />
+        <activity android:name=".banners" />
+        <activity android:name=".orders_page" />
+        <activity android:name=".categories_page" />
+        <activity android:name=".add_product" />
+        <activity android:name=".promo_code_page" />
+        <activity android:name=".delivery_page" />
+        <activity android:name=".social_phones" />
+        <activity android:name=".home_page" />
+        <activity android:name=".order_details" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:ignore="DuplicateActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQazIOIXBxltGgTlry1lggKsjbHlqsoow" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_gift_box"
+            />
+
+        <TextView
+            android:id="@+id/taa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/cairo"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="أضف كود خصم"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/benf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:elevation="3dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:fontFamily="@font/cairo"
+                android:text="كود الخصم : "
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/promocode"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="3.0"
+
+                android:background="@drawable/input"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:hint="اكتب الكود..."
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/benf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:elevation="3dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+
+                android:fontFamily="@font/cairo"
+                android:text="قيمة الخصم : "
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:id="@+id/disc"
+                android:background="@drawable/input"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:hint="اكتب القيمة..."
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/benf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:elevation="3dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:fontFamily="@font/cairo"
+                android:text="نوع الخصم : "
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input"
+                android:layout_weight="3">
+                <Spinner
+                    android:popupBackground="@color/purple_500"
+                    android:id="@+id/type_disc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/benf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:elevation="3dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3.5"
+                android:fontFamily="@font/cairo"
+                android:text="أستخدام مرة واحدة فقط"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/only_one_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pload"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cairo"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="أضف" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
